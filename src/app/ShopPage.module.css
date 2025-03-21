@@ -1,0 +1,227 @@
+/* ShopPage.module.css */
+
+.shopPage {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.shopPage h1 {
+  font-size: 3rem;
+  color: #fd01f5;
+  margin-top: 40px;
+}
+
+.shopPage p {
+  font-size: 1.5rem;
+  color: #01fcfc;
+}
+
+.categoryButtons {
+  margin-top: 20px;
+}
+
+.categoryButtons button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #fd01f5;
+  background-color: #000;
+  color: #01fcfc;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease;
+}
+
+.categoryButtons button:hover {
+  background-color: #fd01f5;
+  color: black;
+}
+
+.floatGalleryContent {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.imgGalleryItem:hover .floatGalleryContent {
+  display: flex;
+  opacity: 1;
+}
+
+.content {
+  color: #fff;
+}
+
+.content a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content a:hover {
+  color: #fd01f5;
+}
+
+.contentBtn {
+  align-self: center;
+}
+
+.contentBtn button {
+  background-color: #fd01f5;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.contentBtn button:hover {
+  background-color: #7b68ee;
+}
+
+.toggleButtons {
+  margin-bottom: 20px; /* Adds spacing between toggle buttons and category buttons */
+}
+
+.toggleButtons button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #fd01f5;
+  background-color: #000;
+  color: #01fcfc;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease;
+}
+
+.toggleButtons button:hover {
+  background-color: #fd01f5;
+  color: black;
+}
+
+.toggleButtons .active {
+  background-color: #fd01f5;
+  color: black;
+}
+
+.imgGalleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #000000; /* Adjust as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imgGalleryItem {
+  flex: 1 1 calc(25% - 16px); /* 4 items per row */
+  background: #1a1a1a;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid #fd01f5 !important; /* Forcing the accent1 color border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 350px; /* Ensure uniform card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Prevent any content from overflowing */
+}
+
+.imgGalleryItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #01fcfc; /* Change border to accent2 on hover */
+}
+
+
+.imgGalleryItem img {
+  width: 150%;
+  height: 150px;
+  width: 100px; /* Fixed height for images */
+  object-fit: cover; /* Ensure consistent image display */
+  margin-bottom: 12px;
+}
+
+
+.imgGalleryItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  width: 100%;
+  height: 200px; /* Set fixed height for all images */
+  object-fit: cover; /* Ensures images are cropped to fit the container */
+  border-radius: 4px;
+  margin-bottom: 12px; /* Add spacing between image and text */
+}
+
+.itemName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+  text-overflow: ellipsis; /* Handle overflow of long text */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.learnMore {
+  color: #fd01f5; /* Accent color 1 */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.learnMore:hover {
+  text-decoration: underline;
+}
+
+.contentBtn {
+  margin-top: 12px;
+}
+
+.addToCart {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #01fcfc; /* Accent color 2 */
+  color: black; /* Black text for better contrast on button */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.addToCart:hover {
+  background: #01dcdc;
+}
+
+@media (max-width: 768px) {
+  .imgGalleryItem {
+    flex: 1 1 calc(50% - 16px); /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .imgGalleryItem {
+    flex: 1 1 100%; /* 1 item per row */
+  }
+}

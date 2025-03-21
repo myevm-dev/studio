@@ -1,0 +1,78 @@
+/* Center the Next Epoch Settings heading */
+h2 {
+  text-align: center;  /* Center the heading text */
+  margin-bottom: 16px; /* Optional: Add spacing below the heading */
+}
+
+
+.widget-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Space between up and down buttons */
+  }
+  
+  .thumbs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between the buttons */
+  }
+  
+  .thumb-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333; /* Dark background */
+    border: 1px solid #fd01f5; /* Accent border color */
+    padding: 6px 10px; /* Reduced padding to make buttons less tall */
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .thumb-button p {
+    margin-left: 5px;
+    color: white; /* Make text white */
+    font-size: 0.875rem; /* Smaller text size for buttons */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .thumb-button:hover {
+    transform: scale(1.05); /* Slight hover effect */
+  }
+  
+  .thumb-button:active {
+    transform: scale(1.05); /* Slightly darker when clicked */
+  }
+  
+  .thumb-button.upvote-button:hover {
+    background-color: #4caf50; /* Green background on hover for upvote */
+  }
+  
+  .thumb-button.downvote-button:hover {
+    background-color: #f44336; /* Red background on hover for downvote */
+  }
+  
+  .thumb-button.upvote-button:active {
+    background-color: #388e3c; /* Darker green when selected */
+  }
+  
+  .thumb-button.downvote-button:active {
+    background-color: #d32f2f; /* Darker red when selected */
+  }
+  
+  .thumbs-icon {
+    font-size: 1rem; /* Smaller icon size */
+    color: black;
+  }
+  
+  .upvote-button {
+    background-color: #000000; /* Black background for upvote */
+  }
+  
+  .downvote-button {
+    background-color: #000000; /* Black background for downvote */
+  }
+  

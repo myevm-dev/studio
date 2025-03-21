@@ -1,0 +1,87 @@
+/* Leaderboard Container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table Header */
+  thead th {
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px;
+    border-bottom: 2px solid #444;
+  }
+  
+  /* Table Body */
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #1f1f1f;
+  }
+  
+  tbody tr:hover {
+    background-color: #444;
+  }
+  
+  /* Rank Column */
+  .position {
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border-right: 1px solid #333;
+  }
+  
+  /* Agent Column */
+  .agent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    border-right: 1px solid #333;
+  }
+  
+  .agent span {
+    display: block;
+  }
+  
+  .agent .team {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* P&L Column */
+  .pl {
+    font-weight: bold;
+    padding: 12px;
+    text-align: right;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  
+    .position,
+    .agent,
+    .pl {
+      padding: 10px;
+    }
+  }
+  
